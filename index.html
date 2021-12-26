@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta Information -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="A Front-End Web Developer" property="og:description" />
+		<meta content="SkylerDev" property="og:title" />
+
+		<!-- Stylesheet Linking -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="CSS/style.css" />
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+		<!-- Website Title -->
+		<title>SkylerDev | A Front-End Web Developer</title>
+	</head>
+	<body id="page-top">
+		<!-- Navigation Bar -->
+		<nav class="navbar">
+			<input type="checkbox" id="check" />
+			<a class="logo" href="#">Skyler<span class="blue">Dev</span></a>
+			<ul class="links">
+				<li><a href="#page-top">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+		</nav>
+
+		<!-- Welcome Section -->
+		<section id="welcome">
+			<div class="text">
+				<h1>Hello, there! I'm <span class="blue">Skyler</span>!</h1>
+				<p>A <span class="blue">Front-End</span> Web Developer</p>
+				<a href="#about">See More</a>
+			</div>
+			<img src="Images/image.png" alt="" />
+		</section>
+
+		<section id="about">
+			<img src="Images/about.png" alt="" />
+			<div class="text">
+				<h1 class="blue">About Me</h1>
+				<p>My name is Skyler and I am a Front-End Web Developer. I started coding and getting involved in Web Development about one year ago. My best friend suggested that I start coding and get into Computer Science. So thats what I did! I now know HTML, CSS, but only know a little bit of JS as I am still learning it.</p>
+			</div>
+		</section>
+
+		<section id="work">
+			<h1 class="blue">My Work</h1>
+			<div class="cards">
+				<div class="card">
+					<div class="container">
+						<p>Responsive Navbar</p>
+					</div>
+					<img src="Images/work1.png" alt="" />
+				</div>
+				<div class="card">
+					<div class="container">
+						<p>Typing Animation</p>
+					</div>
+					<img src="Images/work2.png" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section id="experience">
+			<div class="text">
+				<h1 class="blue">My Experience</h1>
+			</div>
+			<div class="skills">
+				<div class="skill">
+					<h2><i class="fab fa-html5" style="color: #eb4034"></i> HTML - <span style="color: #eb4034">97%</span></h2>
+					<p>I have about two years experience with HTML.</p>
+				</div>
+				<div class="skill">
+					<h2><i class="fab fa-css3-alt" style="color: #4287f5"></i> CSS - <span style="color: #4287f5">84%</span></h2>
+					<p>I have about a year an a half experience with CSS.</p>
+				</div>
+				<div class="skill">
+					<h2><i class="fab fa-js" style="color: #fcba03"></i> JS - <span style="color: #fcba03">5%</span></h2>
+					<p>I have about two weeks experience with JS.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="text">
+				<h1 class="blue">Need to Contact Me?</h1>
+				<p>If you feel the need to contact me for whatever reason, you can contact me using this <a href="#">link</a>!</p>
+			</div>
+			<img src="Images/contact.png" alt="" />
+		</section>
+
+		<footer>
+			<p>Copyright &copy; 2021 Skyler Ingber</p>
+		</footer>
+
+		<script>
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					if (this.scrollY > 20) {
+						$(".navbar").addClass("sticky");
+					} else {
+						$(".navbar").removeClass("sticky");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
