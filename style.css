@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.yellow {
+	color: #fcba03;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px;
+	transition: 0.3s;
+}
+
+.navbar.sticky {
+	height: 60px;
+	background-color: #333;
+}
+
+.logo {
+	color: white;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 35%;
+}
+
+.links li {
+	list-style: none;
+}
+
+.links li a {
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	transition: 0.3s;
+}
+
+.links li a:hover {
+	color: #fcba03;
+}
+
+.welcome {
+	height: 100vh;
+	width: 100%;
+	background-image: url(Images/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.welcome .text {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	padding: 0 100px;
+}
+
+.welcome .text p {
+	color: white;
+	font-size: 20px;
+}
+
+.welcome .text h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.welcome .btn {
+	margin-top: 30px;
+}
+
+.welcome .btn a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #fcba03;
+	transition: 0.3s;
+}
+
+.welcome .btn a:hover {
+	background-color: #e2a705;
+	color: rgb(236, 236, 236);
+}
+
+.about {
+	height: 100vh;
+	width: 100%;
+	padding: 80px 100px 0 100px;
+}
+
+.about h1 {
+	padding: 30px 0;
+	text-align: center;
+	text-shadow: black;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+.about .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 10px #aaa;
+	padding: 20px;
+}
+
+.about .content img {
+	width: 400px;
+	height: auto;
+}
+
+.about .content .text {
+	width: 50%;
+}
+
+.about .content p {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.work {
+	height: 100vh;
+	width: 100%;
+	padding: 80px 100px 0 100px;
+}
+
+.work h1 {
+	padding: 30px 0;
+	text-align: center;
+	text-shadow: black;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+.work .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.work .content .item p {
+	font-size: 25px;
+	font-weight: 300;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.work .content .item img {
+	width: 500px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #aaa;
+	transition: 0.3s;
+	margin-bottom: 20px;
+}
+
+.work .content .item a {
+	text-decoration: none;
+	padding: 8px 15px;
+	font-size: 18px;
+	border-radius: 5px;
+	color: #fcba03;
+	border: 2px solid #fcba03;
+	transition: 0.3s;
+}
+
+.work .content .item a:hover {
+	background-color: #fcba03;
+	color: white;
+}
+
+.skills {
+	height: 100vh;
+	width: 100%;
+	padding: 80px 100px 0 100px;
+}
+
+.skills h1 {
+	padding: 30px 0;
+	text-align: center;
+	text-shadow: black;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+.skills .content {
+	margin-top: 50px;
+	width: 100%;
+}
+
+.skills .content p {
+	width: 70%;
+	margin: 0 auto 10px auto;
+	font-size: 21px;
+}
+
+.skills .content .progress-bar {
+	background-color: #ddd;
+	height: 15px;
+	width: 70%;
+	margin: 0 auto 30px auto;
+	border-radius: 10px;
+}
+
+.skills .content .progress-bar .html {
+	background-color: #fcba03;
+	width: 96%;
+	border-radius: 10px;
+	height: 15px;
+}
+
+.skills .content .progress-bar .css {
+	background-color: #fcba03;
+	height: 15px;
+	border-radius: 10px;
+	width: 78%;
+}
+
+.skills .content .progress-bar .js {
+	background-color: #fcba03;
+	height: 15px;
+	border-radius: 10px;
+	width: 5%;
+}
+
+.contact {
+	height: 100vh;
+	width: 100%;
+	padding: 80px 100px 0 100px;
+}
+
+.contact h1 {
+	padding: 30px 0 10px 0;
+	text-align: center;
+	text-shadow: black;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+.contact p {
+	text-align: center;
+	font-size: 20px;
+	color: #555;
+}
+
+.contact .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.contact form {
+	width: 50%;
+	box-shadow: 0 0 10px #aaa;
+	border-radius: 5px;
+	padding: 20px;
+	margin: auto;
+}
+
+.contact form p {
+	padding-bottom: 20px;
+	color: black;
+}
+
+.contact form .fields {
+	display: flex;
+}
+
+.contact form .field,
+.contact form .fields .field {
+	height: 45px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact form .textarea {
+	height: 80px;
+	width: 100%;
+}
+
+.contact form .name {
+	margin-right: 10px;
+}
+
+.contact form .field input,
+.contact form .textarea textarea {
+	height: 100%;
+	width: 100%;
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	outline: none;
+	padding: 0 15px;
+	font-size: 17px;
+	font-family: "Poppins", sans-serif;
+	transition: 0.3s;
+}
+
+.contact form .field input:focus,
+.contact form .textarea textarea:focus {
+	border-color: #fcba03;
+}
+
+.contact form .textarea textarea {
+	padding-top: 10px;
+	resize: none;
+}
+
+.contact form .button-area {
+	display: flex;
+	align-items: center;
+}
+
+.contact form .button button {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #fcba03;
+	border: 2px solid #fcba03;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.contact form .button button:hover {
+	color: #fcba03;
+	background-color: transparent;
+}
+
+.footer {
+	background-color: #fcba03;
+}
+
+.footer p {
+	font-size: 20px;
+	padding: 30px;
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
