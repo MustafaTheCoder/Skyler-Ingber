@@ -50,7 +50,7 @@ body {
 	}
 
 	.about p,
-	.work p {
+	.projects p {
 		font-size: 18px !important;
 	}
 
@@ -73,7 +73,7 @@ body {
 }
 
 .about h1,
-.work h1 {
+.projects h1 {
 	margin-left: 14px;
 	border-left: 5px solid #00b7ff;
 	text-transform: uppercase;
@@ -81,7 +81,7 @@ body {
 }
 
 .about p,
-.work p {
+.projects p {
 	letter-spacing: 0.5px;
 }
 
@@ -90,12 +90,12 @@ body {
 }
 
 @media (min-width: 1000px) {
-	.work img {
+	.projects img {
 		transition: 0.5s;
 		box-shadow: 0 0 10px #ccc;
 	}
 
-	.work img:hover {
+	.projects img:hover {
 		transform: scale(0.9);
 		opacity: 0.7;
 	}
