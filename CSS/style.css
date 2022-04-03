@@ -157,7 +157,7 @@ span {
 .image-row img {
     max-width: 350px;
     margin: 10px;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 10px 3px #ccc;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
