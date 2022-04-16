@@ -4,133 +4,166 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="Skyler Ingber" />
+		<meta property="og:description" content="Front-End Web Developer" />
+		<meta property="og:image" content="Images/logo.png" />
+		<meta property="og:url" content="skylerdev.netlify.app/" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
 		<title>Skyler Ingber | Front-End Web Developer</title>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<style>
+			body {
+				font-family: sans-serif;
+				background-color: #2f3136;
+			}
+
+			.navbar {
+				min-height: 60px;
+				background-color: #23272a;
+				padding: 0;
+			}
+
+			.navbar-brand {
+				display: flex;
+				align-items: center;
+			}
+
+			.navbar-brand img {
+				max-width: 40px;
+				max-height: 40px;
+			}
+
+			.main-links a:hover {
+				color: #ffffff !important;
+			}
+
+			.main-links a.active {
+				color: #41c8f4 !important;
+			}
+
+			.media-links a.discord:hover {
+				color: #5865f2 !important;
+			}
+
+			.media-links a.youtube:hover {
+				color: #ff0000 !important;
+			}
+
+			.media-links a.github:hover {
+				color: #000000 !important;
+			}
+
+			.button-custom {
+				background-color: #41c8f4 !important;
+				color: #ffffff;
+			}
+
+			.button-custom:hover {
+				background-color: #ffffff !important;
+				color: #41c8f4 !important;
+			}
+		</style>
 	</head>
-	<body id="page-top">
-		<nav class="navbar">
-			<div class="navbar-logo">Skyler Ingber</div>
-			<ul class="navbar-links">
-				<li><a href="#page-top">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li>
-					<a
-						href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=skylerdev07@gmail.com"
-						class="btn"
-						target="_blank"
-						>Contact</a
-					>
-				</li>
-			</ul>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img class="img-fluid me-3" src="logo.png" alt="" />
+					Skyler Ingber
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto main-links">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ms-auto media-links">
+						<li class="nav-item">
+							<a class="nav-link discord" href="#">
+								<i class="fab fa-discord"></i>
+								Discord
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link youtube" href="#">
+								<i class="fab fa-youtube"></i>
+								YouTube
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link github" href="#">
+								<i class="fab fa-github"></i>
+								GitHub
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 
-		<header class="hero-section">
-			<div class="hero-text">
-				<h1>Hi, I'm <span>Skyler Ingber</span>!</h1>
-				<p>A <span>Front-End</span> Web Developer.</p>
-				<a href="#about">Learn More</a>
+		<header class="d-flex justify-content-center align-items-center flex-column vh-100">
+			<div class="text-white fw-normal text-center">
+				<h1 class="mb-2">Skyler Ingber | Developer</h1>
+				<h5>Hi! I'm a 14-year-old Front-End Web Developer from the U.S.</h5>
+				<div class="d-flex justify-content-center mt-3">
+					<a href="#">
+						<button class="btn button-custom btn-lg">Learn More</button>
+					</a>
+				</div>
 			</div>
-			<img class="hero-image" src="Images/coding.png" alt="" />
 		</header>
 
-		<main class="main-section">
-			<section class="about-section" id="about">
-				<img class="about-image" src="Images/profile.png" alt="" />
-				<div class="about-text">
-					<h1>About Myself</h1>
-					<p>
-						Hello! My name is Skyler and I am a 14 year old, Front-End Web Developer. I began my
-						whole journey about three years ago when my best friend suggested I start coding. He was
-						doing Web Development at the time, so I decided to do it as well! I started getting tips
-						from him as well as watching some YouTube videos to get me started. Fast forwarding to
-						the present day, I now know HTML and CSS, but I am still in the process of learning JS.
-					</p>
-				</div>
-			</section>
-			<section class="projects-section" id="projects">
-				<div class="projects-text">
-					<h1>My Projects</h1>
-				</div>
-				<div class="image-row">
-					<a href="https://skyler-responsive-navigation-bar.netlify.app/" target="_blank">
-						<img src="Images/responsive-navigation-bar.png" alt="" />
-					</a>
-					<a href="https://skyler-typing-animation.netlify.app/" target="_blank">
-						<img src="Images/typing-animation.png" alt="" />
-					</a>
-					<a href="https://skyler-simple-landing-page.netlify.app/" target="_blank">
-						<img src="Images/simple-landing-page.png" alt="" />
-					</a>
-				</div>
-				<div class="image-row">
-					<a href="https://skyler-counter.netlify.app/" target="_blank">
-						<img src="Images/counter.png" alt="" />
-					</a>
-					<a href="https://skyler-hex-code-generator.netlify.app/" target="_blank">
-						<img src="Images/hex-code-generator.png" alt="" />
-					</a>
-					<a href="https://skyler-snake-game.netlify.app/" target="_blank">
-						<img src="Images/snake-game.png" alt="" />
-					</a>
-				</div>
-			</section>
-			<form
-					target="_blank"
-					action="https://formsubmit.co/923e95f9428cbc803087f629afe2a700"
-					method="POST"
-				>
-					<div class="form-group">
-						<div class="form-row">
-							<div class="col">
-								<input
-									type="text"
-									name="Name"
-									class="form-control"
-									placeholder="Full Name"
-									required
-								/>
-							</div>
-							<div class="col">
-								<input
-									type="email"
-									name="Email"
-									class="form-control"
-									placeholder="Email Address"
-									required
-								/>
-							</div>
-						</div>
+		<!-- <form target="_blank" action="https://formsubmit.co/923e95f9428cbc803087f629afe2a700" method="POST">
+			<div class="form-group">
+				<div class="form-row">
+					<div class="col">
+						<input type="text" name="Name" class="form-control" placeholder="Full Name" required />
 					</div>
-					<div class="form-group">
-						<textarea
-							placeholder="Your Message"
-							class="form-control"
-							name="Message"
-							rows="10"
-							required
-						></textarea>
+					<div class="col">
+						<input type="email" name="Email" class="form-control" placeholder="Email Address" required />
 					</div>
-					<button type="submit" class="btn btn-lg btn-dark btn-block">
-						Submit Form
-					</button>
-				</form>
-		</main>
-		<footer class="footer-section">
-			<p>Copyright &copy; 2022 Skyler Ingber</p>
-			<div class="footer-links">
-				<a href="https://github.com/skyler252" target="_blank">
-					<i class="fab fa-github"></i>
-				</a>
-				<a href="https://www.youtube.com/channel/UC2Ic-rutN_42Ihtq18xOLOA" target="_blank">
-					<i class="fab fa-youtube"></i>
-				</a>
+				</div>
 			</div>
-		</footer>
+			<div class="form-group">
+				<textarea placeholder="Your Message" class="form-control" name="Message" rows="10" required></textarea>
+			</div>
+			<button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+		</form> -->
 
-		<script>
-			alert("Website is not suitable for mobile devices at the moment!");
-		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
