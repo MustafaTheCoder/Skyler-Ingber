@@ -2,7 +2,7 @@
 ### My portfolio
 
 # Author
-### @skyler252
+### @skyler252 (github.com/skyler252)
 
 # Contributers
-### @MustafaXD 
+### @MustafaXD (github.com/MustafaTheCoder)
